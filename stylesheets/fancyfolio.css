@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+#fancyfolio {}
+
+#fancyfolio ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#fancyfolio ul li {
+	float: left;
+	width: 31%;
+	height: 165px;
+	margin: 0 3% 3% 0;
+	overflow: hidden;
+	border: 1px solid #CCC;
+	position: relative;
+	cursor: pointer;
+}
+
+#fancyfolio ul li.last {
+	margin-right: 0;	
+}
+
+#fancyfolio ul li span.ff_left {
+	position: absolute;
+	display: block;
+	color: #FFF;
+	background-color: #000;
+	opacity: 0.8;
+	width: 100%;
+}
+
+#fancyfolio ul li span.ff_right {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: none;
+}
+
+#fancyfolio ul li span.ff_close {
+	display: none;
+	width: 25px;
+	height: 25px;
+	background: transparent url(../img/close.png) no-repeat;
+	position: absolute;
+	z-index: 1001;
+}
